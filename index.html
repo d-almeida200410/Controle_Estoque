@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/poetry.png">
+    <title>Gestão de Estoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo da empresa -->
+        <div class="logo-container">
+            <img src="img/paperlogo.png" alt="Logo da Empresa" class="logo">
+        </div>
+
+        <h1>Gestão de Estoque</h1>
+        <div class="form-container">
+            <input type="text" id="itemName" placeholder="Nome do Item">
+            <input type="number" id="itemQuantity" placeholder="Quantidade">
+            <input type="number" id="itemPrice" placeholder="Preço (R$)" step="0.01">
+            <input type="text" id="itemImageUrl" placeholder="URL da Imagem">
+            <button id="addItem">Adicionar Item</button>
+        </div>
+        <div id="itemList" class="item-list"></div>
+    </div>
+    <!-- Firebase e scripts -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
